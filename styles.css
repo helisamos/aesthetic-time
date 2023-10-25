@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.clock {
+    font-size: 4em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5), 
+                 -2px -2px 3px rgba(0, 0, 0, 0.5), 
+                 2px -2px 3px rgba(0, 0, 0, 0.5), 
+                 -2px 2px 3px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+}
+
+.time {
+    display: block;
+    font-size: 3em;
+}
+
+.date {
+    display: block;
+    font-size: 1em;
+    margin-top: 10px; /* Small space between time and date */
+}
+
+@media (max-width: 600px) {
+    .clock {
+        font-size: 2.5em;
+    }
+
+    .time {
+        font-size: 2em;
+    }
+
+    .date {
+        font-size: 0.8em;
+    }
+}
